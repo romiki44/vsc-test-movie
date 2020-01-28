@@ -1,2 +1,57 @@
-﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+﻿<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<!-- cldr scripts (needed for globalize) -->
+<script src="~/lib/cldrjs/dist/cldr.js"></script>
+<script src="~/lib/cldrjs/dist/cldr/event.js"></script>
+<script src="~/lib/cldrjs/dist/cldr/supplemental.js"></script>
+
+<!-- globalize scripts -->
+<script src="~/lib/globalize/dist/globalize.js"></script>
+<script src="~/lib/globalize/dist/globalize/number.js"></script>
+<script src="~/lib/globalize/dist/globalize/date.js"></script>
+
+<script src="~/lib/jquery-validation-globalize/jquery.validate.globalize.js"></script>
+
+@*<script>
+//    jQuery.extend(jQuery.validator.messages, {
+//    required: "This field is required.",
+//    remote: "Please fix this field.",
+//    email: "Please enter a valid email address.",
+//    url: "Please enter a valid URL.",
+//    date: "Please enter a valid date.",
+//    dateISO: "Please enter a valid date (ISO).",
+//    number: "Prosím, zadajte platné číslo", //"Please enter a valid number.",
+//    digits: "Please enter only digits.",
+//    creditcard: "Please enter a valid credit card number.",
+//    equalTo: "Please enter the same value again.",
+//    accept: "Please enter a value with a valid extension.",
+//    maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+//    minlength: jQuery.validator.format("Please enter at least {0} characters."),
+//    rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+//    range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+//    max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+//    min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+//});
+</script>*@
+
+<script>
+    Globalize('sk-SK');
+    //var culture = "sk";
+    //$.when(
+    //    $.get("/lib/cldr-data/supplemental/likelySubtags.json"),
+    //    $.get("/lib/cldr-data/main/" + culture + "/numbers.json"),
+    //    $.get("/lib/cldr-data/supplemental/numberingSystems.json"),
+    //    $.get("/lib/cldr-data/main/" + culture + "/ca-gregorian.json"),
+    //    $.get("/lib/cldr-data/main/" + culture +"/timeZoneNames.json"),
+    //    $.get("/lib/cldr-data/supplemental/timeData.json"),
+    //    $.get("/lib/cldr-data/supplemental/weekData.json")
+    //).then(function () {
+    //    // Normalize $.get results, we only need the JSON, not the request statuses.
+    //    return [].slice.apply(arguments, [0]).map(function (result) {
+    //        return result[0];
+    //    });
+    //}).then(Globalize.load).then(function () {
+    //    Globalize.locale(culture);
+    //});
+</script>

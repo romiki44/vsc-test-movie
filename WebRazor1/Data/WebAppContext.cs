@@ -12,7 +12,7 @@ namespace WebRazor1.Data
         public WebAppContext (DbContextOptions<WebAppContext> options)
             : base(options)
         {
-
+            this.Database.SetCommandTimeout(new TimeSpan(0, 1, 0));
         }
 
         public DbSet<WebRazor1.Models.Movie> Movie { get; set; }
