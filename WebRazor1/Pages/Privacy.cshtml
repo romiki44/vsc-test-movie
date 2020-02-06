@@ -1,8 +1,16 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    //ViewData["Title"] = "Privacy Policy";
 }
+
+
+@System.Globalization.CultureInfo.CurrentUICulture
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>@*Use this page to detail your site's privacy policy.*@</p>
+<p>@ViewData["Header"]</p>
+<p>@ViewData["Popisok1"]</p>
+<p>@ViewData["Popisok2"]</p>
+
+
